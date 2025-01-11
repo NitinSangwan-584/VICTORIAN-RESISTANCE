@@ -1,0 +1,100 @@
+:root {
+    --font-family-primary: "Oswald", serif;
+    --font-family-secondary: "Open Sans", serif;
+    --text-sm: ;
+    --text-base: ;
+    --text-md: ;
+    --text-lg: 48px;
+    --text-xl: ;
+    --text-2xl: ;
+    --fw-normal: ;
+    --fw-medium: ;
+    --fw-semibold: ;
+    --fw-bold: ;
+    --lh-24: 24px;
+    --lh-base: ;
+    --lh-md: ;
+    --lh-lg: ;
+    --lh-xl: ;
+    --lh-2xl: ;
+    --bg-primary: ;
+    --bg-secondary: ;
+    --color-white: white;
+    --bg-black: #01000B;
+}
+
+.font-family-primary {
+    font-family: var(--font-family-primary);
+}
+
+.font-family-secondary {
+    font-family: var(--font-family-secondary);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-base {
+    font-size: var(--text-base);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.text-2xl {
+    font-size: var(--text-2xl);
+}
+
+.fw-normal {
+    font-weight: var(--fw-normal);
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw-semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.bg-primary {
+    background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-white {
+    background-color: var(--color-white);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+
+.bg-black {
+    background-color: var(--color-black);
+}
+
+.lh-24 {
+    line-height: var(--lh-24);
+}
