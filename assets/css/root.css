@@ -4,22 +4,14 @@
     --text-sm: ;
     --text-base: ;
     --text-md: ;
-    --text-lg: 48px;
+    --text-lg: 80px;
     --text-xl: ;
     --text-2xl: ;
-    --fw-normal: ;
-    --fw-medium: ;
-    --fw-semibold: ;
-    --fw-bold: ;
-    --lh-24: 24px;
-    --lh-base: ;
-    --lh-md: ;
-    --lh-lg: ;
-    --lh-xl: ;
-    --lh-2xl: ;
     --bg-primary: ;
     --bg-secondary: ;
+    --color-blue: #070D37;
     --color-white: white;
+    --color-sky: #39C6FD;
     --bg-black: #01000B;
 }
 
@@ -83,6 +75,14 @@
     color: var(--color-white);
 }
 
+.color-sky {
+    color: var(--color-sky);
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
 .color-white {
     background-color: var(--color-white);
 }
@@ -93,8 +93,4 @@
 
 .bg-black {
     background-color: var(--color-black);
-}
-
-.lh-24 {
-    line-height: var(--lh-24);
 }
