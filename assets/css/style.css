@@ -115,6 +115,7 @@
 /* Button background and hover effects */
 .button-1 {
     background: var(--color-sky);
+    transition: 300ms all linear
 }
 
 .button-3 {
@@ -134,6 +135,7 @@
     background: var(--color-blue);
     border-radius: 4px;
     border: 1px solid var(--color-sky);
+    transition: 300ms all linear
 }
 
 .button-2:hover {
@@ -225,6 +227,20 @@
 .store:hover {
     transform: scale(1.1);
     transition: transform 0.3s;
+}
+
+.slider-img {
+    max-width: 494px;
+    height: 461px;
+
+}
+
+.max-w-632 {
+    max-width: 632px;
+}
+
+.max-w-516 {
+    max-width: 516px;
 }
 
 /* Responsive Media Queries */

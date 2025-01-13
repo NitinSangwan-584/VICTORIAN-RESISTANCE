@@ -1,15 +1,9 @@
 :root {
     --font-family-primary: "Oswald", serif;
     --font-family-secondary: "Open Sans", serif;
-    --text-sm: ;
-    --text-base: ;
-    --text-md:48px ;
+    --text-md: 48px;
     --text-lg: 80px;
-    --text-xl: ;
-    --text-2xl: ;
-    --bg-navy-blue:#070D37 ;
-    --bg-secondary: ;
-    --color-blue: #070D37;
+    --bg-navy-blue: #070D37;
     --color-white: white;
     --color-sky: #39C6FD;
     --bg-black: #01000B;
@@ -23,14 +17,6 @@
     font-family: var(--font-family-secondary);
 }
 
-.text-sm {
-    font-size: var(--text-sm);
-}
-
-.text-base {
-    font-size: var(--text-base);
-}
-
 .text-md {
     font-size: var(--text-md);
 }
@@ -39,36 +25,8 @@
     font-size: var(--text-lg);
 }
 
-.text-xl {
-    font-size: var(--text-xl);
-}
-
-.text-2xl {
-    font-size: var(--text-2xl);
-}
-
-.fw-normal {
-    font-weight: var(--fw-normal);
-}
-
-.fw-medium {
-    font-weight: var(--fw-medium);
-}
-
-.fw-semibold {
-    font-weight: var(--fw-semibold);
-}
-
-.fw-bold {
-    font-weight: var(--fw-bold);
-}
-
 .bg-navy-blue {
     background-color: var(--bg-navy-blue);
-}
-
-.bg-secondary {
-    background-color: var(--bg-secondary);
 }
 
 .color-white {
