@@ -115,7 +115,7 @@
 /* Button background and hover effects */
 .button-1 {
     background: var(--color-sky);
-    transition: 300ms all linear
+    transition: 400ms all linear
 }
 
 .button-3 {
@@ -134,7 +134,7 @@
 .button-2 {
     background: var(--color-blue);
     border-radius: 4px;
-    border: 1px solid var(--color-sky);
+    border: 1px solid var(--color-blue);
     transition: 300ms all linear
 }
 
@@ -142,7 +142,6 @@
     background-color: var(--color-white);
     color: var(--color-blue);
     transform: scale(1.05);
-    border: 1px solid var(--color-blue);
     transition: all 0.5 200ms ease;
     box-shadow: 0px 0px 20px 0px var(--color-sky);
 }
