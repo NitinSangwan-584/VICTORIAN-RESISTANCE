@@ -1,3 +1,4 @@
+/* Importing fonts and root CSS */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url(../css/root.css);
@@ -6,11 +7,25 @@
     max-width: 1140px;
 }
 
+.mr-30 {
+    margin-right: 30px;
+}
+
+.m-r-0 {
+    margin: 0;
+}
+
 .bg-img {
     background-image: url(../img/bg-img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: var(--bg-navy-blue);
+}
+
+/* Header layer positions */
+.rectangle {
+    bottom: -1px;
 }
 
 .layer {
@@ -31,6 +46,7 @@
     padding-bottom: 68px;
 }
 
+/* Utility gap sizes */
 .gap20 {
     gap: 20px;
 }
@@ -43,6 +59,7 @@
     gap: 53.16px;
 }
 
+/* Line-height utilities for consistent text spacing */
 .lh-20 {
     line-height: 20px;
 }
@@ -95,6 +112,7 @@
     border-radius: 3.48px;
 }
 
+/* Button background and hover effects */
 .button-1 {
     background: var(--color-sky);
 }
@@ -146,6 +164,7 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* Navbar link underline effect */
 .navbar-link:before {
     content: '';
     background: var(--color-sky);
@@ -175,6 +194,40 @@
     width: 100%;
 }
 
+/* Section-1-line-heights */
+.lh-71 {
+    line-height: 71.14px;
+}
+
+.lh-25 {
+    line-height: 25.15px;
+}
+
+.gap-30 {
+    gap: 30.78px;
+}
+
+.max-w-627 {
+    max-width: 627.81px;
+}
+
+.ellips {
+    /* top: 0; */
+    left: 0;
+}
+
+.cristle {
+    right: 0;
+    bottom: 32%;
+    max-width: 376.19px;
+}
+
+.store:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/* Responsive Media Queries */
 @media (max-width:991.98px) {
     .nav-link {
         display: flex !important;
@@ -192,12 +245,21 @@
         z-index: 5;
     }
 
+    .cristle {
+        display: none;
+    }
+
     .show-navbar {
         right: 0 !important;
     }
 
     :root {
         --text-lg: 70px;
+        --text-md: 45px;
+    }
+
+    .lh-71 {
+        line-height: 65px;
     }
 
     .lh-118 {
@@ -216,6 +278,15 @@
 @media (max-width:767.98px) {
     :root {
         --text-lg: 60px;
+        --text-md: 40px;
+    }
+
+    .phone {
+        width: 30%;
+    }
+
+    .lh-71 {
+        line-height: 50px;
     }
 
     .lh-118 {
@@ -234,6 +305,19 @@
 @media (max-width:576px) {
     :root {
         --text-lg: 40px;
+        --text-md: 32px;
+    }
+
+    .store {
+        width: 100%;
+    }
+
+    .lh-25 {
+        line-height: 20px;
+    }
+
+    .lh-71 {
+        line-height: 40px;
     }
 
     .lh-118 {
