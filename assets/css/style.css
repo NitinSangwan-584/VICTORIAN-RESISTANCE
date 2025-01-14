@@ -7,14 +7,6 @@
     max-width: 1140px;
 }
 
-.mr-30 {
-    margin-right: 30px;
-}
-
-.m-r-0 {
-    margin: 0;
-}
-
 .bg-img {
     background-image: url(../img/bg-img.png);
     background-size: cover;
@@ -132,10 +124,10 @@
 }
 
 .button-2 {
-    background: var(--color-blue);
     border-radius: 4px;
-    border: 1px solid var(--color-blue);
-    transition: 300ms all linear
+    border: 1px solid var(--color-sky);
+    transition: 400ms all linear;
+    background-color: var(--bg-navy-blue);
 }
 
 .button-2:hover {
@@ -213,13 +205,12 @@
 }
 
 .ellips {
-    /* top: 0; */
-    left: 0;
+    left: 0%;
 }
 
 .cristle {
-    right: 0;
-    bottom: 32%;
+    right: 0%;
+    bottom: 41%;
     max-width: 376.19px;
 }
 
@@ -228,10 +219,18 @@
     transition: transform 0.3s;
 }
 
-.slider-img {
-    max-width: 494px;
-    height: 461px;
+/* slider */
+.slick {
+    display: flex;
+    gap: 30px;
+}
 
+.flex-column {
+    flex-direction: column;
+}
+
+.card {
+    max-width: 494px;
 }
 
 .max-w-632 {
@@ -242,16 +241,75 @@
     max-width: 516px;
 }
 
+/* FAQ */
+.cristal-left {
+    bottom: 10%;
+    left: 0%;
+}
+
+.max-w-680 {
+    max-width: 680.85px;
+}
+
+.accordion {
+    max-width: 946.31px;
+}
+
+.accordion-button {
+    box-shadow: none !important;
+    /* padding: 24px !important; */
+}
+
+.accordion-body {
+    max-width: 810.34px;
+}
+
+.accordion-item * {
+    position: relative;
+    z-index: 1;
+}
+
+.accordion-item {
+    position: relative;
+    border-radius: 12px !important;
+    overflow: hidden;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.faq-hr {
+    border: 2px solid #39C6FD;
+    max-width: 946px;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/svg/line-img.svg);
+    background-position: center;
+    background-size: contain;
+    transform: rotate(0);
+}
+
+.accordion-button::after {
+    background-image: url(../img/svg/arrow-img.svg);
+    background-position: center;
+    background-size: contain;
+}
+
 /* Responsive Media Queries */
 @media (max-width:991.98px) {
     .nav-link {
-        display: flex !important;
-        flex-direction: column;
-        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(40px);
         width: 100%;
         min-height: 100vh;
         position: fixed;
-        justify-content: center;
         bottom: 0;
         right: -100% !important;
         top: 0%;
@@ -260,7 +318,16 @@
         z-index: 5;
     }
 
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
     .cristle {
+        display: none;
+    }
+
+    .cristal-left {
         display: none;
     }
 
