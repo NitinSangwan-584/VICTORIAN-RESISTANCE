@@ -2,6 +2,7 @@
     --font-family-primary: "Oswald", serif;
     --font-family-secondary: "Open Sans", serif;
     --text-md: 48px;
+    --text-sm: 12px;
     --text-lg: 80px;
     --bg-navy-blue: #070D37;
     --color-white: white;
@@ -23,6 +24,10 @@
 
 .text-lg {
     font-size: var(--text-lg);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
 }
 
 .bg-navy-blue {
