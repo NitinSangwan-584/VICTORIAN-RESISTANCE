@@ -288,7 +288,6 @@
 
 .accordion-item {
     position: relative;
-    border-radius: 12px !important;
     overflow: hidden;
     background-color: transparent !important;
     border: none !important;
