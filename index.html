@@ -5,17 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Victorian Resistance</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/svg/page logo.svg" type="image/x-icon">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
-<body>
-    <!-- <button id="backToTop" title="Back to Top">↑</button> -->
+<body class="position-relative">
+    <button class="fs-5 position-fixed" onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     <!-- header -->
     <header
         class="bg-img bg-navy-blue  justify-content-center  justify-item-center min-vh-100 position-relative overflow-hidden">
@@ -38,7 +46,7 @@
                             <div id="name"
                                 class="d-lg-none d-flex mb-0 z-3 gap-3 align-items-center justify-contet-between">
                                 <button
-                                    class="button-1 border-btn-1 font-family-primary fw-bold lh-23 color-blue border-0 fs-6 p-btn">
+                                    class="button-1 border-btn-1 font-family-primary fw-bold lh-23  border-0 fs-6 p-btn">
                                     LOGIN</button>
                                 <button class="button-2 font-family-primary fw-bold lh-23 fs-6 color-sky p-btn">SIGN
                                     UP</button>
@@ -60,10 +68,11 @@
             </div>
         </nav>
         <div class="container align-items-center justify-content-center d-flex flex-column pt-150 mb-5">
-            <h1 class="text-white fw-normal text-lg lh-118 font-family-primary max-w-607 text-center">JOIN THE
+            <h1 class="text-white fw-normal text-lg lh-118 font-family-primary max-w-607 text-center z-1">JOIN THE
                 VICTORIAN
                 RESISTANCE</h1>
-            <p class="fs-6 fw-normal w-100 lh-21 font-family-secondary text-white pb-68 text-center">Defend the world,
+            <p class="fs-6 fw-normal w-100 lh-21 font-family-secondary text-white pb-68 text-center m-0 z-1">Defend the
+                world,
                 protect what's yours.
                 Join the
                 Resistance!</p>
@@ -79,10 +88,10 @@
         <img class="position-absolute  ellips" src="./assets/img/phone-layer.png" alt="ellips">
         <div class="container z-3 mt-lg-5 overflow-hidden">
             <div class="row align-items-center">
-                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                <div class="col-lg-5 d-flex justify-content-center align-items-center">
                     <img class="phone mt-4" src="./assets/img/phone.png" alt="phone">
                 </div>
-                <div class="col-md-7 mt-4 mt-md-0 pb-lg-5">
+                <div class="col-lg-7 mt-4 mt-md-0 pb-lg-5">
                     <h2
                         class="font-family-primary text-white fw-normal text-md lh-71 mt-lg-5  text-center text-md-start">
                         ABOUT US</h2>
@@ -106,7 +115,7 @@
                         Joining the community benefits you and everyone else — it takes eight level 8 players to make a
                         level 8 portal, and the easier it is to coordinate with people, the more easily you'll be able
                         to gear up to take and hold your area.</p>
-                    <div class="gap-30 w-100 d-flex justify-content-center justify-content-md-start pt-md-5 mb-4">
+                    <div class="gap-30 w-100 d-flex justify-content-center justify-content-md-start pt-md-5 z-3 mb-4">
                         <a href="https://www.apple.com/"><img class="store" src="./assets/img/svg/apple.svg"
                                 alt="apple"></a>
                         <a href="https://play.google.com/"><img class="store" src="./assets/img/svg/google-play.svg"
@@ -118,32 +127,34 @@
     </section>
     <!-- slider -->
     <section
-        class="py-5 bg-navy-blue pt-5 flex-column justify-content-center justify-items-center align-items-center min-vh-100 overflow-hidden">
-        <div class="text-center mb-4">
-            <div class="d-flex align-items-center justify-content-center flex-column">
-                <h2 class="font-family-primary text-white fw-normal text-md lh-71 mt-lg-5 text-center max-w-632">Your
-                    world
-                    is the game board, and your mind is at stake.</h2>
-                <p class="font-family-secondary text-white fw-normal mb-4 fs-6 lh-21 text-center max-w-516">At the heart
-                    of
-                    Ingress is a
-                    desire to bring people together through exploration and teamwork.</p>
+        class="d-flex bg-navy-blue justify-content-center align-items-center align-content-center flex-column py-lg-5 mb-198">
+        <div class="container py-4">
+            <div class="d-flex justify-content-center">
+                <h2 class="font-family-primary fw-normal lh-71 text-center text-white text-md max-w-632">Your world is
+                    the
+                    game board, and your mind is at stake.</h2>
             </div>
         </div>
-        <div class="slider d-flex w-100">
-            <div class="card">
-                <img src="./assets/img/slider-1.png" alt="Feature 1">
+        <div class="d-flex justify-content-center">
+            <p class="font-family-secondary fw-normal fs-6 lh-21 text-center text-white max-w-516 mt-17 m-0 px-12">At the
+                heart of Ingress is a desire to bring people together through exploration and teamwork.
+            </p>
+        </div>
+        <div class="slider w-100 mt-51">
+            <div class="slider-card w-100">
+                <img src="./assets/img/slider-1.png" alt="slider-img-1" class="w-100">
             </div>
-            <div class="card">
-
-                <img src="./assets/img/slider-2.png" alt="Feature 2">
+            <div class="slider-card w-100">
+                <img src="./assets/img/slider-2.png" alt="slider-img-2" class="w-100">
             </div>
-            <div class="card">
-                <img src="./assets/img/slider-3.png" alt="Feature 3">
+            <div class="slider-card w-100">
+                <img src="./assets/img/slider-3.png" alt="slider-img-3" class="w-100">
+            </div>
+            <div class="slider-card w-100">
+                <img src="./assets/img/slider-2.png" alt="slider-img-2" class="w-100">
             </div>
         </div>
     </section>
-    
     <!-- FAQ -->
     <section
         class="py-lg-5 page-faq bg-navy-blue  justify-content-center justify-items-center align-items-center py-lg-5 min-vh-100 position-relative overflow-hidden">
@@ -159,10 +170,12 @@
             <div class="accordion mx-auto py-lg-5" id="accordionExample">
                 <div class="accordion-item active mb-4">
                     <h2 class="accordion-header">
-                        <button class="accordion-button font-family-primary text-white fw-bold fs-5 lh-29" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
-                            Q1. Aliquam magnis sed arcu rutrum quisque sed aliquet vestibulum?
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span
+                                class="font-family-primary text-white fw-bold fs-5 lh-29 d-flex align-items-start"><span
+                                    class="pr-13">Q1.</span> Aliquam magnis sed arcu rutrum quisque sed
+                                aliquet vestibulum?</span>
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -176,14 +189,16 @@
                             Ac viverra auctor a vitae dolor nisi.
                         </div>
                     </div>
-                    <hr class="faq-hr opacity-100 m-0">
+                    <div class="faq-line opacity-100 m-0"></div>
                 </div>
                 <div class="accordion-item mb-lg-4">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed font-family-primary text-white fw-bold fs-5 lh-29"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                            aria-controls="collapseTwo">
-                            Q2. A semper enim quis non aenean adipiscing lectus neque?
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span
+                                class="font-family-primary text-white fw-bold fs-5 lh-29 d-flex align-items-start"><span
+                                    class="pr-13">Q2.</span>A semper enim quis non aenean adipiscing lectus
+                                neque?</span>
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -194,16 +209,16 @@
                             suspendisse mattis dictum. Ac viverra auctor a vitae dolor nisi.
                         </div>
                     </div>
-                    <hr class="faq-hr opacity-100 m-0">
+                    <div class="faq-line opacity-100 m-0"></div>
                 </div>
                 <div class="accordion-item mb-lg-4">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed font-family-primary text-white fw-bold fs-5 lh-29"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                            aria-expanded="false" aria-controls="collapseThree">
-                            Q3. Consectetur faucibus velit aliquam dictum vestibulum sollicitudinlla dapibus
-                            consectetur
-                            suscipit1?
+                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span
+                                class="font-family-primary text-white fw-bold fs-5 lh-29 d-flex align-items-start"><span
+                                    class="pr-13">Q3.</span>Consectetur faucibus velit aliquam dictum vestibulum
+                                sollicitudinlla dapibus consectetur suscipit1?</span>
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -214,14 +229,15 @@
                             suspendisse mattis dictum. Ac viverra auctor a vitae dolor nisi.
                         </div>
                     </div>
-                    <hr class="faq-hr opacity-100 m-0">
+                    <div class="faq-line opacity-100 m-0"></div>
                 </div>
                 <div class="accordion-item mb-lg-4">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed font-family-primary text-white fw-bold fs-5 lh-29"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
-                            aria-controls="collapsefour">
-                            Q4. Volutpat cras natoque suscipit in semisus euismod?
+                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            <span
+                                class="font-family-primary text-white fw-bold fs-5 lh-29 d-flex align-items-start"><span
+                                    class="pr-13">Q4.</span>Volutpat cras natoque suscipit in semisus euismod?</span>
                         </button>
                     </h2>
                     <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -232,18 +248,21 @@
                             suspendisse mattis dictum. Ac viverra auctor a vitae dolor nisi.
                         </div>
                     </div>
-                    <hr class="faq-hr opacity-100 m-0">
+                    <div class="faq-line opacity-100 m-0"></div>
                 </div>
             </div>
         </div>
     </section>
     <!-- JOIN THE RESISTANCE -->
-    <section class="bg-navy-blue bg-layer d-flex justify-content-center align-items-center min-vh-100">
+    <section
+        class="bg-navy-blue bg-layer d-flex justify-content-center align-items-center min-vh-100 position-relative">
+        <img class="position-absolute  cristal-3" src="./assets/img/cristle-1.png" alt="cristle">
         <div class="container ">
-            <div class="row pt-lg-3 box">
+            <div class="row pt-lg-3 box flex-column-reverse flex-lg-row m-3">
                 <div class="col-12 col-lg-8 justify-content-center d-flex flex-column join">
                     <h2 class="font-family-primary text-white text-md lh-71 fw-normal">JOIN THE RESISTANCE</h2>
-                    <p class="font-family-secondary text-white fs-6 lh-21 fw-normal max-w-582">Volutpat etiam tincidunt
+                    <p class="font-family-secondary text-white fs-6 lh-21 fw-normal max-w-582 w-100">Volutpat etiam
+                        tincidunt
                         leo
                         amet
                         pulvinar. Adipiscing vestibulum enim ornare vestibulum. Mauris
@@ -259,32 +278,29 @@
         </div>
     </section>
     <!-- footer -->
-    <footer class="footer-layer d-flex flex-column align-items-center justify-content-center py-lg-5 bg-navy-blue ">
+    <footer class="footer-layer d-flex flex-column align-items-center justify-content-center pt-lg-5 bg-navy-blue ">
         <div class="container">
-            <!-- Logo Section -->
-            <div class="row justify-content-center pt-4">
-                <div class="col-auto">
-                    <a href="https://resvic.org/">
-                        <img src="./assets/img/svg/footer-logo.svg" alt="logo">
-                    </a>
-                </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="https://resvic.org/">
+                    <img src="./assets/img/svg/footer-logo.svg" alt="logo">
+                </a>
             </div>
             <div class="row justify-content-center text-center pt-4">
                 <div class="col-12 col-md-10 col-lg-8">
-                    <p class="font-family-secondary fw-normal fs-6 lh-base text-white opacity-70">
+                    <p class="font-family-secondary fw-normal fs-6 lh-21 text-white opacity-70">
                         Volutpat etiam tincidunt leo amet pulvinar. Adipiscing vestibulum enim ornare vestibulum.
                         Mauris sit hendrerit interdum neque mattis enim eget. Quasi.
                     </p>
                 </div>
             </div>
-            <div class="row justify-content-center text-center py-5">
+            <div class="row justify-content-center text-center py-4">
                 <div class="col-6 col-md-auto">
                     <div class="font-family-primary fw-normal fs-6 lh-sm text-white">
                         PA02-SIERRA-11 SCOREBOARD
                     </div>
                 </div>
                 <div class="col-6 col-md-auto">
-                    <div class="font-family-primary fw-normal fs-6 lh-sm text-white">
+                    <div class="font-family-primary link-opacity-75-hover fw-normal fs-6 lh-sm text-white">
                         SMURFLING GUIDE
                     </div>
                 </div>
@@ -292,15 +308,25 @@
         </div>
         <div class="footer-line w-100 bg-white opacity-70" style="height: 1px;"></div>
         <div class="d-flex flex-column align-items-center mt-4">
-            <p class="font-family-secondary fw-normal text-sm lh-sm text-white opacity-70 text-center mb-0">
+            <p
+                class="font-family-secondary fw-normal text-sm lh-sm text-white align-items-center opacity-70 text-center py-2">
                 © copyright 2025 Victorian Resistance
             </p>
         </div>
     </footer>
+    <!-- bootstrap link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <!-- slider link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

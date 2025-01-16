@@ -1,9 +1,10 @@
 :root {
     --font-family-primary: "Oswald", serif;
     --font-family-secondary: "Open Sans", serif;
-    --text-md: 48px;
     --text-sm: 12px;
+    --text-md: 48px;
     --text-lg: 80px;
+    --color-blue: #070D37;
     --bg-navy-blue: #070D37;
     --color-white: white;
     --color-sky: #39C6FD;
