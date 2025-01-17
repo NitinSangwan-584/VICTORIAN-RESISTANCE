@@ -5,15 +5,6 @@ const navbarbtn = () => {
     document.getElementById("rotates2").classList.toggle("rotate-45")
     document.body.classList.toggle("overflow-hidden")
 }
-$('.slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true,
-    dots: true,
-    arrows: false,
-    infinity: true
-});
 // slider
 $('.slider').slick({
     infinite: true,
@@ -52,22 +43,28 @@ $('.slider').slick({
     ]
 });
 
-// Get the button
-let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+// Get the button element
+const mybutton = document.getElementById("myBtn");
+
+// Add scroll event listener
+window.onscroll = function () {
+    scrollFunction();
+};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        mybutton.style.display = "block";
+    // Check scroll position
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block"; // Show the button
     } else {
-        mybutton.style.display = "none";
+        mybutton.style.display = "none"; // Hide the button
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Scroll to top when the button is clicked
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scroll effect
+    });
 }

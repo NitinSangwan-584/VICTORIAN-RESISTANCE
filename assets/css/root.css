@@ -1,9 +1,20 @@
 :root {
     --font-family-primary: "Oswald", serif;
     --font-family-secondary: "Open Sans", serif;
+    /* font-size */
     --text-sm: 12px;
     --text-md: 48px;
     --text-lg: 80px;
+    /* line-height */
+    --lh-20: 20px;
+    --lh-21: 21px;
+    --lh-23: 23.71px;
+    --lh-24: 24px;
+    --lh-25: 25.15px;
+    --lh-29: 29.64px;
+    --lh-71: 71.14px;
+    --lh-118: 118.56px;
+    /* color */
     --color-blue: #070D37;
     --bg-navy-blue: #070D37;
     --color-white: white;
@@ -57,4 +68,37 @@
 
 .bg-black {
     background-color: var(--color-black);
+}
+
+/* Line-height utilities for consistent text spacing */
+.lh-20 {
+    line-height: var(--lh-20);
+}
+
+.lh-21 {
+    line-height: var(--lh-21);
+}
+
+.lh-23 {
+    line-height: var(--lh-23);
+}
+
+.lh-24 {
+    line-height: var(--lh-24);
+}
+
+.lh-25 {
+    line-height: var(--lh-25);
+}
+
+.lh-29 {
+    line-height: var(--lh-29);
+}
+
+.lh-71 {
+    line-height: var(--lh-71);
+}
+
+.lh-118 {
+    line-height: var(--lh-118);
 }
